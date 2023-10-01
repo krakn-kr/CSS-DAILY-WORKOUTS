@@ -1,0 +1,23 @@
+ssh-keygen -t ed25519 -C "krashokkumarnaidu@gmail.com"
+ls ~/.ssh
+cat ~/.ssh/id_ed25519.pub
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_ed25519
+ git remote add origin git@github.com:krakn-kr/NAMASTE-REACT-ASSIGNMENTS.git
+ git branch -M main
+git push -u origin main
+git add .
+git init
+git commit -m "1st time commit"
+git status
+git push origin main --force
+
+
+git remote add origin git@github.com:krakn-kr/CSS-DAILY-WORKOUTS.git
+git branch -M main
+git push -u origin main
+git add .
+git init
+git commit -m "1st time commit"
+git status
+git push origin main --force
